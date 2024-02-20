@@ -1,0 +1,461 @@
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+body{
+    position: relative;
+    background-color: #F3F5FC;
+}
+
+
+.alura__logo{
+    position: absolute;
+    width: 90px;
+    height: 30px;
+    top: 40px;
+    left: 20px;
+    float: left;
+}
+
+
+.input__text{
+    position: absolute;
+    width: 577px; 
+    margin: 140px 0 0 120px;
+    z-index: 1;
+}
+
+#input_text{
+    border: none;
+    outline: none;
+    background-color: #F3F5FC;
+    color: #0A3871;
+    height: 40px;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+
+.container{
+    position: relative;
+}
+
+.imagen__rectangulo{
+    position: absolute;
+    left: 840px;
+    width: 25%;
+    height: 620px;
+    top: 20px;
+}
+
+.imagen__mensaje{
+    position: absolute;
+    left: 880px;
+    right: 75px;
+    top: 400px;
+    width: 20%;
+    z-index: 2;
+}
+
+
+.imagen__persona{
+    position: absolute;
+    width: 20%;
+    height: 304px;
+    left: 880px;
+    right: 75px;
+    top: 100px;
+    z-index: 1;
+}
+
+.texto__output{
+    position: absolute;
+    left: 840px;
+    right: 75px;
+    top: 50px;
+    resize: none;
+    margin: 40px 40px 40px 40px;
+    border: none;
+    z-index: 0;
+}
+
+#output_text{
+    color: #0A3871;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.botones{
+    position: relative;
+}
+
+.disclaimer{
+    position: absolute;
+    top: 480px;
+    left: 100px;
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+    opacity: 0.8;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+.codificar{
+    position: absolute;
+    width: 328px;
+    height: 67px;
+    left: 100px;
+    top: 500px;
+    border-radius: 24px;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 24px 32px 24px 32px;
+    margin: 0;
+    background: #0A3871;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    z-index: 99;
+}
+
+.codificar span{
+    background: inherit;
+    box-sizing: border-box;
+    transition: .3s;
+    position: relative;
+}
+
+.codificar span::before{
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+}
+
+.codificar:hover span::before{
+    animation-name: chitchat;
+    animation-duration: .5s;
+}
+
+.descifrar{
+    position: absolute;
+    display: inline-block;
+    width: 328px;
+    height: 67px;
+    left: 450px;
+    top: 500px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 24px;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 24px 32px 24px 32px;
+    box-sizing: border-box;
+    margin: 0;
+    background: #D8DFE8;
+    color: #0A3871;
+    z-index: 99;
+}
+
+.descifrar span{
+    background: inherit;
+    box-sizing: border-box;
+    transition: .3s;
+    position: relative;
+}
+
+.descifrar span::before{
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    background: inherit;
+}
+
+.descifrar:hover span::before{
+    animation-name: chitchat;
+    animation-duration: .5s;
+}
+
+.copy{
+    position: absolute;
+    display: none;
+    /* width: 328px;
+    height: 67px; */
+    top: 100px;
+    left: 800px;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    /* border-radius: 24px;
+    border: 1px solid; */
+    cursor: pointer;
+    /* padding: 24px 32px 24px 32px; */
+    /* box-sizing: border-box; */
+    margin: 0;
+    /* background: #D8DFE8; */
+    color: #0A3871;
+    z-index: 99;
+}
+
+
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+
+#content-wrap {
+    padding-bottom: 2.5rem;    /* Footer height */
+}
+
+#footer {
+    position: absolute;
+    bottom: -20px;
+    left: 300px;
+    width: 100%;
+    height: 2.5rem;      
+    font-family: inherit;  
+    font-size: 10px; 
+    color: gray;   /* Footer height */
+}
+
+
+@keyframes chitchat {
+    0% {
+        content: "#";
+    }
+
+    5% {
+      content: ".";
+    }
+  
+    10% {
+      content: "^{";
+    }
+  
+    15% {
+      content: "-!";
+    }
+  
+    20% {
+      content: "#$_";
+    }
+  
+    25% {
+      content: "№:0";
+    }
+  
+    30% {
+      content: "#{+.";
+    }
+  
+    35% {
+      content: "@}-?";
+    }
+  
+    40% {
+      content: "?{4@%";
+    }
+  
+    45% {
+      content: "=.,^!";
+    }
+  
+    50% {
+      content: "?2@%";
+    }
+  
+    55% {
+      content: "\;1}]";
+    }
+  
+    60% {
+      content: "?{%:%";
+      right: 0;
+    }
+  
+    65% {
+      content: "|{f[4";
+      right: 0;
+    }
+  
+    70% {
+      content: "{4%0%";
+      right: 0;
+    }
+  
+    75% {
+      content: "'1_0<";
+      right: 0;
+    }
+  
+    80% {
+      content: "{0%";
+      right: 0;
+    }
+  
+    85% {
+      content: "]>'";
+      right: 0;
+    }
+  
+    90% {
+      content: "4";
+      right: 0;
+    }
+  
+    95% {
+      content: "2";
+      right: 0;
+    }
+  
+    100% {
+      content: "";
+      right: 0;
+    }
+  }
+
+  /* ======== breakpoints ===========*/
+
+@media screen and (max-width: 768px) {
+    .input__text{
+      width: 688px;
+      height: 48px;
+      top: 140px;
+      left: 40px;
+      margin: 0;
+    }
+
+    .imagen__persona{
+      display: none;
+    }
+
+    .imagen__rectangulo{
+      position: absolute;
+      left: 25px;
+      width: 688px;
+      height: 300px;
+      top: 700px;
+  }
+  
+    .imagen__mensaje{
+        position: absolute;
+        left: 165px;
+        width: 400px;
+        top: 770px;
+        z-index: 2;
+    }
+
+    .texto__output{
+        position: absolute;
+        /* border: 1px solid; */
+        left: 25px;
+        top: 680px;
+        width: 600px;
+        height: 250px;
+    }
+
+    .codificar{
+        position: absolute;
+        left: 40px;
+    }
+
+    .descifrar{
+        position: absolute;
+        left: 400px;
+    }
+
+    .codificar, .descifrar{
+        width: 290px;
+        height: 67px;
+    }
+
+    .copy{
+        left: 340px;
+        top: 600px;
+        font-size: 50px;
+    }
+    /* ====con esto ajustamos el alert al tamaño tablet ===== */
+    body.swal2-toast-shown .swal2-container {
+      max-width: 90% !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .input__text{
+      width: 328px;
+      height: 48px;
+      top: 140px;
+      left: 40px;
+      margin: 0;
+    }
+    
+    .imagen__persona{
+      display: none;
+    }
+
+    .imagen__rectangulo{
+      position: absolute;
+      left: 0px;
+      width: 350px;
+      height: 300px;
+      top: 700px;
+      /* border: 1px solid; */
+      margin: 0;
+  }
+  
+    .imagen__mensaje{
+        position: absolute;
+        left: 30px;
+        width: 80%;
+        top: 790px;
+        z-index: 2;
+    }
+
+    .texto__output{
+        position: absolute;
+        /* border: 1px solid; */
+        left: -10px;
+        top: 680px;
+        width: 280px;
+        height: 250px;
+    }
+
+    .disclaimer{
+      left: 70px;
+    }
+
+    .codificar{
+        position: absolute;
+        left: 40px;
+    }
+
+    .descifrar{
+        position: absolute;
+        left: 40px;
+        top: 600px;
+    }
+
+    .codificar, .descifrar{
+        width: 290px;
+        height: 67px;
+    }
+
+    .copy{
+        left: 280px;
+        top: 900px;
+        font-size: 40px;
+    }
+
+    /* ====con esto ajustamos el alert al tamaño mobile ===== */
+    body.swal2-toast-shown .swal2-container {
+      max-width: 50% !important;
+    }
+}

@@ -1,0 +1,35 @@
+
+.input__text{
+    width: 1000px;
+    padding: 168px 623px 808px 240px;
+    
+}
+
+#input_text{
+    border: none;
+    outline: none;
+    color: #0A3871;
+    height: 48px;
+    font-family: 'Inter' sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.imagen__mensaje{
+    position: absolute;
+    margin-left: 1032px;
+    margin-right: 75px;
+}
+
+.image__person{
+    position:relative;
+    padding-left: 1032px;
+    padding-right: 72px;
+}
+
+.texto__output{
+    position:absolute;
+    resize: none;
+    margin: 40px 40px 40px 1000px;
+}
